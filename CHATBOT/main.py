@@ -18,6 +18,7 @@ with open('intents.json') as file:
 stemmer = LancasterStemmer()
 
 try:
+    
     with open("intents.pickle", "rb") as file:
         words, labels, training, output = pickle.load(file)
 except:
